@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: arial,sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: #444;
+}
+
+.grid-content > * {
+    padding-block-start: 1em;
+    border: solid rgb(91, 91, 91) 1px;
+}
+
+.grid-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 10px;
+    margin: 100px 50px;
+}
+
+.card {
+    background-color: rgb(143, 175, 188);
+    min-height: 100px;
+}
